@@ -307,6 +307,19 @@ footer {
     }
 }
 
+.dp-container {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+#display-img {
+    width: 300px;
+    height: 400px;
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -383,7 +396,9 @@ footer {
         font-size: 2.25em;
         margin-bottom: 15px;
     }
+
 }
+
 
 #lead-overlay {
     position: absolute;
@@ -420,6 +435,10 @@ footer {
 
     i {
         animation: pulsate 1.5s ease;
+        .profile-image {
+            display: inline;
+        }
+        
         animation-iteration-count: infinite;
         padding-top: 5px;;
     }
@@ -652,6 +671,10 @@ footer {
 
 .project-image {
     float: left;
+    img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 .project-info {
@@ -665,6 +688,13 @@ footer {
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
+        margin: 0 15px;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #7e8890;
         margin: 0 0 15px 0;
     }
 
@@ -672,6 +702,22 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+    }
+
+    ul {
+        padding-inline-start: 2%;
+    }
+
+    li {
+        display: inline-block;
+        margin: 3px;
+        padding: 3px 7px;
+        color: #374054af;
+        background: darken($background-alt, 5%);
+        border: 0.3rem solid #37405481;
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
     }
 }
 
@@ -946,6 +992,7 @@ footer {
         a {
             padding: 10px 20px;
         }
+
     }
 
     #lead-down {
@@ -959,7 +1006,13 @@ footer {
     }
 
     .project-image {
-        display: none;
+        display: block;
+        width: 100%;
+        padding-bottom: 12px;
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 
     .project-info {
@@ -996,6 +1049,7 @@ footer {
             font-size: 0.9em;
             padding: 5px 10px;
         }
+
     }
 
 }
